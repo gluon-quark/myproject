@@ -1,0 +1,363 @@
+<html>
+    <script>
+        (h = ()=>{
+            if (confirm("kindly use * before () when using () for multiplication. eg: 7*(2) to obtain 14 instead of 7(2)"))
+                {}    
+            else{h()}   
+            })()
+        var a = [];
+        var b = [];
+        var c =[];
+        var d = 0;
+        var a1 = "";
+        var a2 = 0;
+        var a3 = "";
+        var s = 0;
+        var s1 = [];
+        var s2 = [];
+
+        function retrive(i){
+            if(i==0){
+                a.push(eval(s2[i]));
+                a11();
+                document.getElementById("display").innerHTML = a1;
+            }
+            if(i==1){
+                a.push(eval(s2[i]));
+                a11();
+                document.getElementById("display").innerHTML = a1;
+            }
+            if(i==2){
+                a.push(eval(s2[i]));
+                a11();
+                document.getElementById("display").innerHTML = a1;
+            }
+            if(i==3){
+                a.push(eval(s2[i]));
+                a11();
+                document.getElementById("display").innerHTML = a1;
+            }
+            if(i==4){
+                a.push(eval(s2[i]));
+                a11();
+                document.getElementById("display").innerHTML = a1;
+            }
+            if(i==5){
+                a.push(eval(s2[i]));
+                a11();
+                document.getElementById("display").innerHTML = a1;
+            }
+            if(i==6){
+                a.push(eval(s2[i]));
+                a11();
+                document.getElementById("display").innerHTML = a1;
+            }
+            if(i==7){
+                a.push(eval(s2[i]));
+                a11();
+                document.getElementById("display").innerHTML = a1;
+            }
+            if(i==8){
+                a.push(eval(s2[i]));
+                a11();
+                document.getElementById("display").innerHTML = a1;
+            }
+            if(i==9){
+                a.push(eval(s2[i]));
+                a11();
+                document.getElementById("display").innerHTML = a1;
+            }
+                            
+        }
+        function ch(){
+            s2 = [];
+
+            document.getElementById("h1").innerHTML = s2;
+            document.getElementById("hd1").innerHTML = s2;
+
+            document.getElementById("h2").innerHTML = s2;
+            document.getElementById("hd2").innerHTML = s2;
+
+            document.getElementById("h3").innerHTML = s2;
+            document.getElementById("hd3").innerHTML = s2;
+
+            document.getElementById("h4").innerHTML = s2;
+            document.getElementById("hd4").innerHTML = s2;
+
+            document.getElementById("h5").innerHTML = s2;
+            document.getElementById("hd5").innerHTML = s2;
+
+            document.getElementById("h6").innerHTML = s2;
+            document.getElementById("hd6").innerHTML = s2;
+
+            document.getElementById("h7").innerHTML = s2;
+            document.getElementById("hd7").innerHTML = s2;
+
+            document.getElementById("h8").innerHTML = s2;
+            document.getElementById("hd8").innerHTML = s2;
+
+            document.getElementById("h9").innerHTML = s2;
+            document.getElementById("hd9").innerHTML = s2;
+
+            document.getElementById("h10").innerHTML = s2;
+            document.getElementById("hd10").innerHTML = s2;
+        }
+
+        function a11(){
+            a1 = "";
+            for (var i=0;i<a.length;i++) { 
+                a1 = a1 + a[i];
+            } 
+        }
+        function a12(){
+            if(a1 == ""){
+                a1 = '0';
+            }
+            try {
+                a3 = a1;
+                d = eval(a1);
+                a = [];
+                a[0]=d;
+                a11();
+                document.getElementById("display").innerHTML = a1;
+            }
+             catch(error) {
+                document.getElementById("display").innerHTML = "error";
+                a = [];
+                a11();
+            }
+            
+            if(isNaN(eval(a1))){}
+            else{
+                if(s<11){
+            s++;
+                s2.unshift(a3);
+                for ( let i = 0;i<s2.length;i++){
+                    if(i==0){
+                        document.getElementById("h1").innerHTML = eval(s2[i]);
+                        document.getElementById("hd1").innerHTML = s2[i];
+                    }
+                    if(i==1){
+                        document.getElementById("h2").innerHTML =eval(s2[i]);
+                        document.getElementById("hd2").innerHTML = s2[i];
+                    }
+                    if(i==2){
+                        document.getElementById("h3").innerHTML = eval(s2[i]);
+                        document.getElementById("hd3").innerHTML = s2[i];
+                    }
+                    if(i==3){
+                        document.getElementById("h4").innerHTML = eval(s2[i]);
+                        document.getElementById("hd4").innerHTML = s2[i];
+                    }
+                    if(i==4){
+                        document.getElementById("h5").innerHTML = eval(s2[i]);
+                        document.getElementById("hd5").innerHTML = s2[i];
+                    }
+                    if(i==5){
+                        document.getElementById("h6").innerHTML = eval(s2[i]);
+                        document.getElementById("hd6").innerHTML = s2[i];
+                    }
+                    if(i==6){
+                        document.getElementById("h7").innerHTML = eval(s2[i]);
+                        document.getElementById("hd7").innerHTML = s2[i];
+                    }
+                    if(i==7){
+                        document.getElementById("h8").innerHTML = eval(s2[i]);
+                        document.getElementById("hd8").innerHTML = s2[i];
+                    }
+                    if(i==8){
+                        document.getElementById("h9").innerHTML = eval(s2[i]);
+                        document.getElementById("hd9").innerHTML = s2[i];
+                    }
+                    if(i==9){
+                        document.getElementById("h10").innerHTML = eval(s2[i]);
+                        document.getElementById("hd10").innerHTML = s2[i];
+                    }
+                
+                }
+            } 
+            else{
+            
+                s2.unshift(a3); s2.pop();
+                for ( let i = 0;i<s2.length;i++){
+                    if(i==0){
+                        document.getElementById("h1").innerHTML = eval(s2[i]);
+                        document.getElementById("hd1").innerHTML = s2[i];
+                    }
+                    if(i==1){
+                        document.getElementById("h2").innerHTML =eval(s2[i]);
+                        document.getElementById("hd2").innerHTML = s2[i];
+                    }
+                    if(i==2){
+                        document.getElementById("h3").innerHTML = eval(s2[i]);
+                        document.getElementById("hd3").innerHTML = s2[i];
+                    }
+                    if(i==3){
+                        document.getElementById("h4").innerHTML = eval(s2[i]);
+                        document.getElementById("hd4").innerHTML = s2[i];
+                    }
+                    if(i==4){
+                        document.getElementById("h5").innerHTML = eval(s2[i]);
+                        document.getElementById("hd5").innerHTML = s2[i];
+                    }
+                    if(i==5){
+                        document.getElementById("h6").innerHTML = eval(s2[i]);
+                        document.getElementById("hd6").innerHTML = s2[i];
+                    }
+                    if(i==6){
+                        document.getElementById("h7").innerHTML = eval(s2[i]);
+                        document.getElementById("hd7").innerHTML = s2[i];
+                    }
+                    if(i==7){
+                        document.getElementById("h8").innerHTML = eval(s2[i]);
+                        document.getElementById("hd8").innerHTML = s2[i];
+                    }
+                    if(i==8){
+                        document.getElementById("h9").innerHTML = eval(s2[i]);
+                        document.getElementById("hd9").innerHTML = s2[i];
+                    }
+                    if(i==9){
+                        document.getElementById("h10").innerHTML = eval(s2[i]);
+                        document.getElementById("hd10").innerHTML = s2[i];
+                    }
+                }
+            
+            }
+            }
+        }
+
+        function calc(v){
+            if(v == 0){a.push(0);a11();c=[];a2=0;d=0;b=[];a3="";document.getElementById("display").innerHTML = a1;}
+            if(v == 1){a.push(1);a11();c=[];a2=0;d=0;b=[];a3="";document.getElementById("display").innerHTML = a1;}
+            if(v == 2){a.push(2);a11();c=[];a2=0;d=0;b=[];a3="";document.getElementById("display").innerHTML = a1;}
+            if(v == 3){a.push(3);a11();c=[];a2=0;d=0;b=[];a3="";document.getElementById("display").innerHTML = a1;}
+            if(v == 4){a.push(4);a11();c=[];a2=0;d=0;b=[];a3="";document.getElementById("display").innerHTML = a1;}
+            if(v == 5){a.push(5);a11();c=[];a2=0;d=0;b=[];a3="";document.getElementById("display").innerHTML = a1;}
+            if(v == 6){a.push(6);a11();c=[];a2=0;d=0;b=[];a3="";document.getElementById("display").innerHTML = a1;}
+            if(v == 7){a.push(7);a11();c=[];a2=0;d=0;b=[];a3="";document.getElementById("display").innerHTML = a1;}
+            if(v == 8){a.push(8);a11();c=[];a2=0;d=0;b=[];a3="";document.getElementById("display").innerHTML = a1;}
+            if(v == 9){a.push(9);a11();c=[];a2=0;d=0;b=[];a3="";document.getElementById("display").innerHTML = a1;}
+            if(v == "+"){
+                a.push(' + ');a11();
+                c=[]; a2=0; d=0; b=[]; a3="";
+                document.getElementById("display").innerHTML = a1;
+            }
+            if(v == "-"){
+                a.push(' - ');a11();
+                c=[]; a2=0; d=0; b=[]; a3="";
+                document.getElementById("display").innerHTML = a1;
+            }
+            if(v == "*"){
+                a.push(' * ');a11();
+                c=[]; a2=0; d=0; b=[]; a3="";
+                document.getElementById("display").innerHTML = a1;
+            }
+            if(v == "/"){
+                a.push(' / ');a11();
+                c=[]; a2=0; d=0; b=[]; a3="";
+                document.getElementById("display").innerHTML = a1;
+            }
+            if(v == "."){
+                a.push('.');a11();
+                c=[]; a2=0; d=0; b=[]; a3="";
+                document.getElementById("display").innerHTML = a1;
+            }
+            if(v == "["){
+                a.push('(');a11();
+                c=[]; a2=0; d=0; b=[]; a3="";
+                document.getElementById("display").innerHTML = a1;
+            }
+            if(v == "]"){
+                a.push(')');a11();
+                c=[]; a2=0; d=0; b=[]; a3="";
+                document.getElementById("display").innerHTML = a1;
+            }
+            if(v == "back"){
+                a.pop(); a11(); c=[]; a2=0; d=0; b=[]; a3="";
+                document.getElementById("display").innerHTML = a1;
+            }
+            if(v == "clear"){
+                a=[];a11();c=[];a2=0;d=0;b=[];a3="";
+                document.getElementById("display").innerHTML = a1;
+            }
+        }
+        function historybox(){
+                document.getElementById("clickhistory").classList.toggle("historytransition")
+        }
+        </script>
+    <head>
+        <style>
+            .click{box-shadow: 0px 1px 0px 0px;}
+            .buttons{height:40px;width:80px;background-color: rgb(23, 24, 17);border-radius: 25px;font-size: larger;font-family:sans-serif;font-weight: bold;color: white;border: none;box-shadow: 0px 2px 0px 0px rgb(102, 101, 101);}
+            .buttons:active{box-shadow: 0px 0px 0px 0px rgb(102, 101, 101);}
+            .history{height:0px;width:100%;background-color: blue;transition:3s;border-radius: 10px;}
+            .historytransition{height:355px;width:100%;background-color: blue;transition:3s;}
+            .hisbutton{height: 32px;width:100%;background-color: black;color: white;font-size: large;font-weight: bold;border: none; }
+            .hisbutton:hover{background-color: rgb(23, 23, 23);}
+            .hisdiv{height: 39px;width:100%;background-color: black;color: white;font-size: large;font-weight: bold;border-top: 2px solid wheat; padding: 8px 0px;box-sizing: border-box;text-align: center;}
+        </style>
+    </head>
+    <body style="display: flex;justify-content: center;align-items: center;">
+        <div id = "outer" style="height:auto;width:auto;background-color: rgb(47, 42, 42);padding:20px;border-radius: 10px;">
+        <button id="display" style="height:80px;width:250px;background-color: rgb(181, 104, 75);margin-bottom:30px;overflow:auto;box-sizing: border-box;font-size:x-large;border-top:3px solid black;border-left: 3px solid black;border-bottom:0px;border-right: 0px ;font-weight: bold;">0</button>
+        <br>
+        <div class="history" id="clickhistory" data-bs-parent="hisp" style="overflow: auto;position: absolute;width:248px;z-index: 3;">
+            <div class="hisdiv" id="hd1"></div>
+            <input onclick="retrive(0)" class="hisbutton" id="h1" type="button"></input>
+            <div class="hisdiv" id="hd2"></div>
+            <button onclick="retrive(1)" class="hisbutton" id="h2"></button>
+            <div class="hisdiv" id="hd3"></div>
+            <button onclick="retrive(2)" class="hisbutton" id="h3"></button>
+            <div class="hisdiv" id="hd4"></div>
+            <button onclick="retrive(3)" class="hisbutton" id="h4"></button>
+            <div class="hisdiv" id="hd5"></div>
+            <button onclick="retrive(4)" class="hisbutton" id="h5"></button>
+            <div class="hisdiv" id="hd6"></div>
+            <button onclick="retrive(5)" class="hisbutton" id="h6"></button>
+            <div class="hisdiv" id="hd7"></div>
+            <button onclick="retrive(6)" class="hisbutton" id="h7"></button>
+            <div class="hisdiv" id="hd8"></div>
+            <button onclick="retrive(7)" class="hisbutton" id="h8"></button>
+            <div class="hisdiv" id="hd9"></div>
+            <button onclick="retrive(8)" class="hisbutton" id="h9"></button>
+            <div class="hisdiv" id="hd10"></div>
+            <button onclick="retrive(9)" class="hisbutton" id="h10"></button>
+            <button onclick="ch()" style="height:40px;width:100%;background-color: BLACK;color: red;font-size: larger;font-weight: bold;position: sticky;bottom: -1px;" id="hc">CLEAR HISTORY</button>
+        </div>
+        <br>
+        <div>
+            <button onclick="calc(0)" class="buttons">0</button>
+            <button onclick="calc(1)" class="buttons">1</button>  
+            <button onclick="calc(2)" class="buttons">2</button>  
+        </div><br>
+        <div>
+            <button onclick="calc(3)" class="buttons">3</button>  
+            <button onclick="calc(4)" class="buttons">4</button>
+            <button onclick="calc(5)" class="buttons">5</button> 
+        </div><br>
+        <div> 
+            <button onclick="calc(6)" class="buttons">6</button>  
+            <button onclick="calc(7)" class="buttons">7</button>  
+            <button onclick="calc(8)" class="buttons">8</button>
+        </div><br>
+        <div>
+            <button onclick="calc(9)" class="buttons">9</button>  
+            <button onclick="calc('+')" class="buttons">+</button>  
+            <button onclick="calc('-')" class="buttons">-</button>  
+        </div><br>
+        <div>
+            <button onclick="calc('*')" class="buttons">*</button>
+            <button onclick="calc('/')" class="buttons">/</button>
+            <button onclick="a12()" class="buttons"> = </button>
+        </div><br>
+        <div>
+            <button onclick="calc('.')" class="buttons">.</button>
+            <button onclick="calc('[')" class="buttons">(</button>
+            <button onclick="calc(']')" class="buttons">)</button>
+        </div><br>
+            <button onclick="historybox()" class="buttons" id="hisp" >his</button>
+            <button onclick="calc('back')" class="buttons">BACK</button>
+            <button onclick="calc('clear')" class="buttons" style="color: rgb(202, 36, 36);">CLEAR</button>  
+        </div>
+    </body>
+</html>
